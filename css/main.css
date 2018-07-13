@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    font-family: Arial;
+}
+#container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid DodgerBlue;
+}
+#header {
+    color: white;
+    padding-left: 20px;
+    border: 2px solid transparent;
+    border-bottom: 4px solid white;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.unit-block {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+.content {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    /*background-color: #ff6600;*/
+    background: linear-gradient(to top left, #cc95c0, #dbd4b4, #7aa1d2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction {
+    width: 200px;
+    height:100px;
+    background-color: peachpuff;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkslategray;
+}
