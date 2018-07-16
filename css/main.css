@@ -1,3 +1,9 @@
+:root {
+    --c1: #f6546a;
+    --c2: #40e0d0;
+    --c3: #3399ff;
+    --c4: #fef65b;
+}
 body {
     background-color: black;
     font-family: Arial;
