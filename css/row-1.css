@@ -1,18 +1,22 @@
-#row-1-update-icon {
+#row-1-col-1 {
     width: 100px;
     height: 100px;
     background-color: transparent;
     position: relative;
     transform: rotate(-40deg);
+    transition: all 3s;
 }
-#row-1-frame {
+#row-1-col-1:active {
+    transform: rotate(3turn);
+}
+#row-1-col-1-frame {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: white;
     position: relative;
 }
-#row-1-circle {
+#row-1-col-1-circle {
     position: absolute;
     top: 25px;
     left: 25px;
@@ -26,7 +30,7 @@
     border-right: 4px solid transparent;
     transform: rotate(45deg);
 }
-#row-1-arrow {
+#row-1-col-1-arrow {
     position: absolute;
     right: 16px;
     bottom: 50px;
@@ -36,4 +40,57 @@
     transform: rotate(32deg);
     border-left: 4px solid transparent;
     border-top: 4px solid transparent;
+}
+
+#row-1-col-2 {
+    width: 110px;
+    height: 40px;
+    position: relative;
+}
+#row-1-col-2-right {
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    background-color: var(--c3);
+    left:  80px;
+    z-index: 9;
+    animation-name: r1c2-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#row-1-col-2-middle {
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    z-index: 10;
+    background-color: var(--c4);
+}
+#row-1-col-2-left {
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 0;
+    background-color: var(--c1);
+    z-index: 11;
+    animation-name: r1c2-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes r1c2-1 {
+    49% {left: 80px; z-index: 11;}
+    50% {left: 80px; z-index: 9}
+    99% {left: 0; z-index: 9;}
+    100% {left: 0; z-index:11;}
+}
+@keyframes r1c2-2 {
+    49% {left: 0; z-index: 9;}
+    50% {left: 0; z-index: 11;}
+    99% {left: 80px; z-index: 11;}
+    100% {left: 80px; z-index: 9;}
 }
