@@ -94,3 +94,35 @@
     99% {left: 80px; z-index: 11;}
     100% {left: 80px; z-index: 9;}
 }
+#row-1-col-3-back {
+    width: 150px;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 2px;
+}
+#row-1-col-3-middle {
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(#eeeeee, #c0c0c0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#row-1-col-3-front {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #000000;
+    color: #808080;
+}
+#row-1-col-3-chk {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+}
