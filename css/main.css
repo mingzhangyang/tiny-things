@@ -10,6 +10,8 @@ body {
 }
 #container {
     width: 80%;
+    max-width: 1200px;
+    min-width: 800px;
     margin: auto;
     border: 1px solid DodgerBlue;
 }
@@ -24,6 +26,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .unit-block {
     width: 200px;
