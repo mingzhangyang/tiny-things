@@ -126,3 +126,24 @@
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: bold;
 }
+#row-1-col-4 {
+    width: 200px;
+    height: 200px;
+}
+#row-1-col-4 g {
+    stroke-width: 2px;
+    stroke: #f66;
+    fill: transparent;
+}
+#row-1-col-4 path {
+    animation-name: r1c4-do;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+@keyframes r1c4-do {
+    /*   from {stroke-dashoffset: 500;} */
+    to {stroke-dashoffset: 0;}
+}
