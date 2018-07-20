@@ -9,8 +9,8 @@ body {
     font-family: Arial;
 }
 #container {
-    width: 1200px;
-    /*max-width: 1200px;*/
+    width: 1208px;
+    /*max-width: 1208px;*/
     /*min-width: 960px;*/
     margin: auto;
     border: 1px solid DodgerBlue;
@@ -26,6 +26,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    border: 1px dotted #f66;
     /*flex-wrap: wrap;*/
 }
 .unit-block {

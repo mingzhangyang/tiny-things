@@ -1,7 +1,6 @@
 #row-2-col-1 {
     width: 200px;
     height: 200px;
-    border: 1px dotted DodgerBlue;
     position: relative;
 }
 #row-2-col-1 .pole {
