@@ -147,3 +147,36 @@
     /*   from {stroke-dashoffset: 500;} */
     to {stroke-dashoffset: 0;}
 }
+#row-1-col-5 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: r1c5-rot;
+    animation-duration: 2s;
+    animaiton-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+#row-1-col-5 .arc {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+#row-1-col-5 .a1 {
+    border-top: 8px solid #f66;
+}
+#row-1-col-5 .a2 {
+    border-top: 8px solid DodgerBlue;
+    transform: rotate(120deg)
+}
+#row-1-col-5 .a3 {
+    border-top: 8px solid yellow;
+    transform: rotate(240deg);
+}
+@keyframes r1c5-rot {
+    to {transform: rotate(1turn);}
+}
