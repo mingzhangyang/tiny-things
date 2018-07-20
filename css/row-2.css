@@ -1,0 +1,42 @@
+#row-2-col-1 {
+    width: 200px;
+    height: 200px;
+    border: 1px dotted DodgerBlue;
+    position: relative;
+}
+#row-2-col-1 .pole {
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 37%;
+    top: 50px;
+    margin-left: -3px;
+}
+.flag {
+    background-color: #f44;
+    position: absolute;
+    height: 40px;
+    border-radius: 2px;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+#row-2-col-1 .left {
+    width: 10px;
+    top: 50px;
+    left: 38%;
+    animation-name: r2c1-unfold;
+}
+#row-2-col-1 .right {
+    width: 50px;
+    top: 58px;
+    right: 37%;
+    animation-name: r2c1-fold;
+}
+@keyframes r2c1-unfold {
+    to {width: 40px}
+}
+@keyframes r2c1-fold {
+    to {width: 10px}
+}
