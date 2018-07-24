@@ -34,8 +34,36 @@
     animation-name: r2c1-fold;
 }
 @keyframes r2c1-unfold {
-    to {width: 40px}
+    to {width: 50px}
 }
 @keyframes r2c1-fold {
-    to {width: 10px}
+    to {width: 0}
+}
+
+#row-2-col-2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+#row-2-col-2 .circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    top: 64px;
+    left: 64px;
+}
+#row-2-col-2 .back {
+    border: 6px solid aliceblue;
+}
+#row-2-col-2 .spinner {
+    border: 6px solid transparent;
+    border-top-color: DodgerBlue;
+    animation-name: r2c2-spin;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes r2c2-spin {
+    to {transform: rotate(1turn);}
 }
