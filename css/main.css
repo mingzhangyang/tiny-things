@@ -43,6 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .introduction {
     width: 200px;
