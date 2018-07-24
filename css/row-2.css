@@ -67,3 +67,46 @@
 @keyframes r2c2-spin {
     to {transform: rotate(1turn);}
 }
+#row-2-col-3 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+#row-2-col-3 .circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 5px;
+    top: 64px;
+    left: 64px;
+    background-color: DodgerBlue;
+    border-color: transparent;
+    overflow: hidden;
+}
+#row-2-col-3 .circle::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -110%;
+    left: -210%;
+    transform: rotate(30deg);
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.13) 0%,
+            rgba(255, 255, 255, 0.13) 77%,
+            rgba(255, 255, 255, 0.5) 92%,
+            rgba(255, 255, 255, 0.0) 100%
+    );
+    opacity: 0;
+    animation: r2c3-shine 1s infinite;
+}
+@keyframes r2c3-shine {
+    15% {
+        opacity: 1;
+    }
+    70% {
+        top: -30%;
+        left: -30%;
+    }
+}
