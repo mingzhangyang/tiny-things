@@ -1,8 +1,3 @@
-#row-2-col-1 {
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
 #row-2-col-1 .pole {
     width: 5px;
     height: 100px;
@@ -40,11 +35,6 @@
     to {width: 0}
 }
 
-#row-2-col-2 {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
 #row-2-col-2 .circle {
     width: 60px;
     height: 60px;
@@ -66,11 +56,6 @@
 }
 @keyframes r2c2-spin {
     to {transform: rotate(1turn);}
-}
-#row-2-col-3 {
-    width: 200px;
-    height: 200px;
-    position: relative;
 }
 #row-2-col-3 .circle {
     width: 60px;
@@ -110,11 +95,7 @@
         left: -30%;
     }
 }
-#row-2-col-4 {
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
+
 #row-2-col-4 .ring {
     border: 10px solid #000;
     border-radius: 50%;
@@ -181,4 +162,64 @@
 }
 @keyframes r2c4-spin5 {
     100% {transform: rotate3d(1, 1, 0, 180deg);}
+}
+
+#row-2-col-5 .pan {
+    width: 180px;
+    height: 90px;
+    border-left: 2px solid #f66;
+    border-top: 2px solid #f66;
+    border-right: 2px solid #f66;
+    border-radius: 90px 90px 0 0;
+    background-color: grey;
+    opacity: .8;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    overflow: hidden;
+}
+#row-2-col-5 .scan {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: green;
+    top: 92px;
+    transform-origin: 100% 0;
+    animation-name: r2c5-rt1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes r2c5-rt1 {
+    100% {transform: rotate(360deg)}
+}
+@keyframes r2c5-rt2 {
+    0% {transform: rotate(-180deg)}
+    100% {transform: rotate(180deg)}
+}
+#row-2-col-5 .copy {
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg) rotateY(180deg);
+}
+#row-2-col-5 .copy .scan {
+    animation-name: r2c5-rt2;
+}
+#row-2-col-5 .circle {
+    border-radius: 50%;
+    position: absolute;
+    opacity: .5;
+}
+#row-2-col-5 .c1 {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff68f;
+    top: 40px;
+    left: 40px;
+}
+#row-2-col-5 .c2 {
+    width: 60px;
+    height: 60px;
+    border: 2px solid orange;
+    top: 70px;
+    left: 70px;
 }
