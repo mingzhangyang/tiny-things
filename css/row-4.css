@@ -224,3 +224,45 @@
 #row-4-col-4 .wrapper:hover {
     transform: scale(.6, .6) rotate(270deg);
 }
+
+#row-4-col-5 .wrapper {
+    width: 300px;
+    height: 100px;
+    transform: scale(.6, .6) translateX(-150px);
+}
+#row-4-col-5 .square {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    position: absolute;
+    animation-name: r4c5-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#row-4-col-5 .enclosing {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    animation-name: r4c5-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes r4c5-move {
+    12.5% {transform: translate(50px, -16px)}
+    25% {transform: translate(100px, 0)}
+    37.5% {transform: translate(150px, -16px)}
+    50% {transform: translate(200px, 0)}
+    62.5% {transform: translate(250px, -16px)}
+    75% {transform: translate(300px, 0)}
+    87.5% {transform: translate(350px, -16px)}
+    100% {transform: translate(400px, 0)}
+}
+@keyframes r4c5-spin {
+    100% {transform: rotate(360deg)}
+}
