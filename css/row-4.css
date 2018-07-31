@@ -89,3 +89,108 @@
 #row-4-col-1 .wrapper {
     transform: translateY(20px);
 }
+
+#row-4-col-2 .wrapper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+#row-4-col-2 .block {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: #f66;
+    border-radius: 5px;
+    opacity: 1;
+    top: 40px;
+    left: -20px;
+    animation-name: r4c2-stream;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#row-4-col-2 .b1 {
+    animation-delay: 0s;
+}
+#row-4-col-2 .b2 {
+    animation-delay: .4s;
+}
+#row-4-col-2 .b3 {
+    animation-delay: .8s;
+}
+#row-4-col-2 .b4 {
+    animation-delay: 1.2s;
+}
+#row-4-col-2 .b5 {
+    animation-delay: 1.6s;
+}
+#row-4-col-2 .b6 {
+    animation-delay: 2s;
+}
+#row-4-col-2 .b7 {
+    animation-delay: 2.4s;
+}
+#row-4-col-2 .b8 {
+    animation-delay: 2.8s;
+}
+#row-4-col-2 .b9 {
+    animation-delay: 3.2s;
+}
+#row-4-col-2 .b10 {
+    animation-delay: 3.6s;
+}
+
+@keyframes r4c2-stream {
+    /*   0% {transform: translateX(0); opacity: 1}
+      49% {transform: translateX(180px); opacity: 1}
+      50% {transform: translateX(180px); opacity: 0;} */
+    100% {transform: translateX(300px)}
+}
+
+#row-4-col-3 .wrapper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: scale(.8, .8);
+}
+#row-4-col-3 .ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f66;
+    position: relative;
+    left: 25px;
+    animation-name: r4c3-jump;
+}
+#row-4-col-3 .cube {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    bottom: -1px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    animation-name: r4c3-spin;
+}
+#row-4-col-3 .shape {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes r4c3-spin {
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(1turn)}
+}
+@keyframes r4c3-jump {
+    10% {transform: translateY(-32px)}
+    25% {transform: translateY(-25px)}
+    35% {transform: translateY(-32px)}
+    50% {transform: translateY(0)}
+    60% {transform: translateY(-32px)}
+    75% {transform: translateY(-25px)}
+    85% {transform: translateY(-32px)}
+    100% {transform: translateY(0)}
+}
