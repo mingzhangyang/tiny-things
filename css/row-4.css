@@ -194,3 +194,33 @@
     85% {transform: translateY(-32px)}
     100% {transform: translateY(0)}
 }
+
+#row-4-col-4 .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 2s;
+    transform: scale(.6, .6);
+}
+
+
+#row-4-col-4 svg {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    fill: transparent;
+}
+#row-4-col-4 .teeth {
+    stroke: dodgerblue;
+    stroke-width: 4px;
+}
+#row-4-col-4 .ring {
+    stroke: dodgerblue;
+    stroke-width: 4px;
+}
+
+#row-4-col-4 .wrapper:hover {
+    transform: scale(.6, .6) rotate(270deg);
+}
