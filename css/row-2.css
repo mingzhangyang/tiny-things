@@ -164,6 +164,13 @@
     100% {transform: rotate3d(1, 1, 0, 180deg);}
 }
 
+
+#row-2-col-5 .wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(.6, .6);
+}
 #row-2-col-5 .pan {
     width: 180px;
     height: 90px;
