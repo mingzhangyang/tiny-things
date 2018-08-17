@@ -1,0 +1,27 @@
+#row-5-col-1 .word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#row-5-col-1 .background {
+    width: 40px;
+    height: 40px;
+    background-color: dodgerblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    animation: r5c1-spin 2s infinite;
+}
+
+@keyframes r5c1-spin {
+    80% {
+        transform: rotate(1turn);
+        border-radius: 50%;
+    }
+    100% {
+        transform: scale(.8);
+        border-radius: 50%;
+    }
+}
