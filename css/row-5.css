@@ -145,3 +145,79 @@
         transform: rotate(1turn);
     }
 }
+
+#row-5-col-5 .frame {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    border: 1px dotted white;
+}
+#row-5-col-5 .bar {
+    position: absolute;
+    top: 0;
+}
+#row-5-col-5 .v-bar {
+    width: 10px;
+    height: 80px;
+}
+#row-5-col-5 .h-bar {
+    width: 70px;
+    height: 10px;
+}
+#row-5-col-5 .right {
+    right: 0;
+}
+#row-5-col-5 .left.h-bar {
+    transform-origin: 0 100%;
+    transform: translateY(-2px) rotate(30deg);
+}
+#row-5-col-5 .right.h-bar {
+    transform-origin: 100% 100%;
+    transform: translateY(-2px) rotate(-30deg);
+}
+#row-5-col-5 .fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f66;
+    top: 0;
+    border-radius: 2px;
+}
+#row-5-col-5 .v-bar .fill {
+    animation-name: r5c5-grow-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#row-5-col-5 .h-bar.left .fill {
+    right: 0;
+}
+#row-5-col-5 .h-bar.right .fill {
+    left: 0;
+}
+#row-5-col-5 .h-bar .fill {
+    animation-name: r5c5-grow-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes r5c5-grow-1 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes r5c5-grow-2 {
+    0% {
+        height: 0;
+    }
+    40% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
